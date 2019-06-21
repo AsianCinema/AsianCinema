@@ -1,0 +1,60 @@
+<?php
+/**
+ * NOTICE OF LICENSE.
+ *
+ * UNIT3D is open-sourced software licensed under the GNU General Public License v3.0
+ * The details is bundled with this project in the file LICENSE.txt.
+ *
+ * @project    UNIT3D
+ *
+ * @license    https://www.gnu.org/licenses/agpl-3.0.en.html/ GNU Affero General Public License v3.0
+ * @author     Ryuu
+ */
+
+return [
+
+    /*
+    |--------------------------------------------------------------------------
+    | Download Check Page
+    |--------------------------------------------------------------------------
+    |
+    | Weather Or Not User Will Be Stopped At Download Check Page Or Not
+    |
+    */
+
+    'download_check_page' => '1',
+
+    /*
+    |--------------------------------------------------------------------------
+    | Source Value
+    |--------------------------------------------------------------------------
+    |
+    | Torrent Source Value
+    |
+    */
+
+    'source' => 'AsianCinema',
+
+    /*
+    |--------------------------------------------------------------------------
+    | Created By
+    |--------------------------------------------------------------------------
+    |
+    | Created By Value
+    |
+    */
+
+    'created_by'        => 'Edited by AsianCinema',
+    'created_by_append' => true,
+
+    /*
+    |--------------------------------------------------------------------------
+    | Comment
+    |--------------------------------------------------------------------------
+    |
+    | Comment Value
+    |
+    */
+
+    'comment' => 'This torrent was downloaded from AsianCinema',
+];

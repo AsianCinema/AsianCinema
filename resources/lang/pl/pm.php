@@ -1,0 +1,28 @@
+<?php
+
+return [
+  'create' => 'Stwórz',
+  'delete' => 'Kasować',
+  'enter-subject' => 'Wprowadź temat',
+  'from' => 'Z',
+  'inbox' => 'W pudełku',
+  'mark-all-read' => 'Zaznacz wszystkie wiadomości jako przeczytane',
+  'message' => 'Wiadomość',
+  'messages' => 'Wiadomości',
+  'new' => 'Nowa wiadomość',
+  'outbox' => 'Skrzynka nadawcza',
+  'private' => 'Prywatny',
+  'read' => 'Czytać',
+  'received-at' => 'Otrzymane w',
+  'refresh' => 'Odświeżać',
+  'reply' => 'Odpowiadać',
+  'search' => 'Wyszukaj według tematu',
+  'select' => 'Wybierz użytkownika',
+  'send' => 'Wyślij PM',
+  'send-to' => 'Wyślij PM do',
+  'sent' => 'Wysłane',
+  'sent-at' => 'Wysłane na',
+  'subject' => 'Przedmiot',
+  'to' => 'Do',
+  'unread' => 'nieprzeczytane',
+];
