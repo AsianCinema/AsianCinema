@@ -56,7 +56,7 @@ Route::group(['middleware' => 'language'], function () {
         Route::post('username/reminder', 'Auth\ForgotUsernameController@sendUsernameReminder')->name('username.email');
     });
 
-    Route::group(['before' => 'auth'], function () {
+    Route::group(['before' => 'auth','domain' => 'tracker.asiancinema.me'], function () {
         // Announce
         Route::get('/announce/{passkey}', 'AnnounceController@announce')->name('announce');
 
