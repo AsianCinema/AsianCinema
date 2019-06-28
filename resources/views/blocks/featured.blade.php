@@ -13,7 +13,7 @@
                     <div class="item active">
                         <div id="movie-card-list">
                             <div class="movie-card"
-                                 style="background-image: url('https://image.tmdb.org/t/p/original/6G2fLCVm9fiLyHvBrccq6GSe2ih.jpg');">
+                                 style="background-image: url('/img/featured_slider.jpg');">
                                 <div class="color-overlay">
                                     <div class="movie-content">
                                         <div class="movie-header">
