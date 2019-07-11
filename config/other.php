@@ -22,7 +22,7 @@ return [
     |
     */
 
-    'codebase' => 'UNIT3D Nex-Gen Torrent Tracker v1.9.3',
+    'codebase' => 'UNIT3D Nex-Gen Torrent Tracker v1.9.4',
 
     /*
     |--------------------------------------------------------------------------
@@ -86,9 +86,9 @@ return [
     | Global Freeleech
     |
     */
-    'freeleech' => '0',
+    'freeleech' => '1',
 
-    'freeleech_until' => '06/16/2019 01:00 PM EST',
+    'freeleech_until' => '07/12/2019 08:00 PM EST',
 
     /*
     |--------------------------------------------------------------------------
@@ -132,7 +132,7 @@ return [
     | Restricted mode for invites. If set to true, invites will be restricted
     | Exempt these groups from the invite restrictions
     */
-    'invite-only'   => '1',
+    'invite-only'   => '0',
     'invite_expire' => '14',
 
     'invites_restriced' => false,
