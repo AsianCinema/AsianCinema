@@ -17,7 +17,7 @@ use App\Models\Seedbox;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-class SeedboxController extends Controller
+class StaffSeedboxController extends Controller
 {
     /**
      * Display All Registered Seedboxes.
