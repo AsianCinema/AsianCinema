@@ -637,7 +637,7 @@ Route::group(['middleware' => 'language'], function () {
         Route::post('/applications/{id}/reject', 'ApplicationController@reject')->name('staff.applications.reject');
 
         // Registered Seedboxes
-        Route::get('/seedboxes', 'StaffSeedboxController@index')->name('staff.seedbox.index');
+	Route::get('/seedboxes', 'StaffSeedboxController@index')->name('staff.seedbox.index');
         Route::delete('/seedboxes/{id}', 'StaffSeedboxController@destroy')->name('staff.seedbox.destroy');
 
         // Commands
