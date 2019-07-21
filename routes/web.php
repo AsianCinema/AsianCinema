@@ -318,9 +318,9 @@ Route::group(['middleware' => 'language'], function () {
         Route::get('/{locale}/back', 'LanguageController@home')->name('back');
 
         // User Seedboxes
-        Route::get('/{username}/seedboxes', 'SeedboxController@index')->name('seedboxes.index');
-        Route::post('/{username}/seedboxes/store', 'SeedboxController@store')->name('seedboxes.store');
-        Route::delete('/{username}/seedboxes/destroy/{id}', 'SeedboxController@destroy')->name('seedboxes.destroy');
+        Route::get('/seedboxes/view/{username}', 'SeedboxController@index')->name('seedboxes.index');
+        Route::post('/seedboxes/store/{username}', 'SeedboxController@store')->name('seedboxes.store');
+        Route::delete('/seedboxes/destroy/{username}/{id}', 'SeedboxController@destroy')->name('seedboxes.destroy');
 
         // Invite System
         Route::get('/invite', 'InviteController@invite')->name('invite');
@@ -637,8 +637,8 @@ Route::group(['middleware' => 'language'], function () {
         Route::post('/applications/{id}/reject', 'ApplicationController@reject')->name('staff.applications.reject');
 
         // Registered Seedboxes
-	Route::get('/seedboxes', 'StaffSeedboxController@index')->name('staff.seedbox.index');
-        Route::delete('/seedboxes/{id}', 'StaffSeedboxController@destroy')->name('staff.seedbox.destroy');
+        Route::get('/seedboxes', 'SeedboxController@index')->name('staff.seedbox.index');
+        Route::delete('/seedboxes/{id}', 'SeedboxController@destroy')->name('staff.seedbox.destroy');
 
         // Commands
         Route::get('/commands', 'CommandController@index')->name('staff.commands.index');
