@@ -15,6 +15,7 @@ namespace App\Http\Middleware;
 
 use Closure;
 use App\Models\Group;
+use Illuminate\Support\Facades\DB;
 
 class CheckIfBanned
 {
@@ -38,6 +39,11 @@ class CheckIfBanned
 
             return redirect()->to('login')
                 ->withErrors('This account is Banned!');
+        }
+        $banned_ip = DB::table('ip_ban')->where('ip','=',$request->ip())->get('ip');
+        if(count($banned_ip) != 0){
+	        return redirect()->to('login')
+		        ->withErrors('This IP-Address is Banned!');
         }
 
         return $next($request);
