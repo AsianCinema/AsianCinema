@@ -135,7 +135,7 @@
             @endif
 
             <div class="custom-control custom-control-alternative custom-checkbox">
-              <input class="custom-control-input" id="customCheckLogin" type="checkbox" ame="remember" {{ old('remember') ? 'checked' : '' }}>
+              <input class="custom-control-input" id="customCheckLogin" type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}>
               <label class="custom-control-label" for="customCheckLogin">
                 <span class="text-muted">@lang('auth.remember-me')</span>
               </label>
