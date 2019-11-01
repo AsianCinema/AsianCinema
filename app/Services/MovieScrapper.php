@@ -2,7 +2,7 @@
 /**
  * NOTICE OF LICENSE.
  *
- * UNIT3D is open-sourced software licensed under the GNU General Public License v3.0
+ * UNIT3D is open-sourced software licensed under the GNU Affero General Public License v3.0
  * The details is bundled with this project in the file LICENSE.txt.
  *
  * @project    UNIT3D
@@ -15,23 +15,15 @@ namespace App\Services;
 
 use App\Services\Data\Tv;
 use App\Services\Data\Movie;
-use App\Services\Clients\OmdbClient;
 use App\Services\Clients\TmdbClient;
-use App\Services\Clients\TvdbClient;
 
 class MovieScrapper
 {
     private $tmdbClient;
 
-    private $omdbClient;
-
-    private $tvdbClient;
-
     public function __construct($tmdb_key = null, $tvdb_key = null, $omdb_key = null)
     {
         $this->tmdbClient = new TmdbClient($tmdb_key);
-        $this->omdbClient = new OmdbClient($omdb_key);
-        $this->tvdbClient = new TvdbClient($tvdb_key);
     }
 
     /**
@@ -51,7 +43,7 @@ class MovieScrapper
         }
 
         if ($type == 'movie') {
-            $omdb_movie = $tmdb_movie = new Movie();
+            $tmdb_movie = new Movie();
 
             if ($tmdb) {
                 $tmdb_movie = $this->tmdbClient->movie($tmdb);
@@ -62,14 +54,13 @@ class MovieScrapper
                 if (! $tmdb_movie->title) {
                     $tmdb_movie = $this->tmdbClient->find(['imdb' => $imdb], $type);
                 }
-                $omdb_movie = $this->omdbClient->movie($imdb);
             }
 
-            return $tmdb_movie->merge($omdb_movie);
+            return $tmdb_movie;
         }
 
         if ($type == 'tv') {
-            $omdb_tv = $tmdb_tv = new Tv();
+            $tmdb_tv = new Tv();
 
             if ($tmdb) {
                 $tmdb_tv = $this->tmdbClient->tv($tmdb);
@@ -80,10 +71,9 @@ class MovieScrapper
                 if (! $tmdb_tv->title) {
                     $tmdb_tv = $this->tmdbClient->find(['imdb' => $imdb], 'tv');
                 }
-                $omdb_tv = $this->omdbClient->tv($imdb);
             }
 
-            return $tmdb_tv->merge($omdb_tv);
+            return $tmdb_tv;
         }
     }
 

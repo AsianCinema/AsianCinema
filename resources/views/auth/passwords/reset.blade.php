@@ -19,15 +19,15 @@
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="{{ Sri::hash('css/main/login.css') }}" crossorigin="anonymous">
 </head>
 
-<body class="bg-default" style="background: url({{ url('/img/login-background.png') }}) no-repeat center center fixed;">
+<body class="bg-default" style="background: url({{ url('/img/login-halloween.jpg') }}) no-repeat center center fixed; background-size: cover;">
+<audio autoplay loop>
+    <source src="{{ url('/sounds/login.mp3') }}">
+</audio>
 <div class="main-content">
 
     <!-- Navbar -->
     <nav class="navbar navbar-top navbar-horizontal navbar-expand-md navbar-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="{{ route('login') }}">
-                <img src="{{ url('/img/login-logo.png') }}" class="navbar-brand-img" alt="{{ config('other.title') }}">
-            </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse-main" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -37,9 +37,7 @@
                 <div class="navbar-collapse-header d-md-none">
                     <div class="row">
                         <div class="col-6 collapse-brand">
-                            <a href="{{ route('login') }}">
-                                <img src="{{ url('/img/login-logo.png') }}">
-                            </a>
+
                         </div>
                         <div class="col-6 collapse-close">
                             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse-main" aria-controls="sidenav-main" aria-expanded="false" aria-label="Toggle sidenav">

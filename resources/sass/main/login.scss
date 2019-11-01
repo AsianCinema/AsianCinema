@@ -89,7 +89,7 @@ body
     text-align: left;
 
     color: #525f7f;
-    background-color: #f8f9fe;
+    background-color: #212529;
 }
 
 [tabindex='-1']:focus
@@ -2961,15 +2961,15 @@ fieldset:disabled a.btn
 .btn-primary
 {
     color: #fff;
-    border-color: #5e72e4;
-    background-color: #5e72e4;
+    border-color: #f99404;
+    background-color: #f99404;
     box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
 }
 .btn-primary:hover
 {
     color: #fff;
-    border-color: #5e72e4; 
-    background-color: #5e72e4;
+    border-color: #f99404;
+    background-color: #f99404;
 }
 .btn-primary:focus,
 .btn-primary.focus
@@ -2980,16 +2980,16 @@ fieldset:disabled a.btn
 .btn-primary:disabled
 {
     color: #fff;
-    border-color: #5e72e4; 
-    background-color: #5e72e4;
+    border-color: #f99404;
+    background-color: #f99404;
 }
 .btn-primary:not(:disabled):not(.disabled):active,
 .btn-primary:not(:disabled):not(.disabled).active,
 .show > .btn-primary.dropdown-toggle
 {
     color: #fff;
-    border-color: #5e72e4; 
-    background-color: #324cdd;
+    border-color: #f99404;
+    background-color: #f99404;
 }
 .btn-primary:not(:disabled):not(.disabled):active:focus,
 .btn-primary:not(:disabled):not(.disabled).active:focus,
@@ -7927,7 +7927,7 @@ button.bg-primary:focus
 
 .bg-secondary
 {
-        background: linear-gradient(87deg, #000000ad 0, #252525d4 100%) !important;
+        background: #1c1c1c !important;
 }
 
 a.bg-secondary:hover,
@@ -8108,7 +8108,7 @@ button.bg-darker:focus
 
 .border-0
 {
-    border: 0 !important;
+    border: 3px solid #f99404 !important;
 }
 
 .border-top-0
@@ -9443,7 +9443,7 @@ button.bg-darker:focus
 .shadow,
 .card-profile-image img
 {
-    box-shadow: 0 0 2rem 0 rgba(136, 152, 170, .15) !important;
+    box-shadow: none !important;
 }
 
 .shadow-lg
@@ -14688,7 +14688,7 @@ a.text-darker:focus
 
 .text-muted
 {
-    color: #c8d1da !important;
+    color: #f99404 !important;
     font-weight: 800;
 }
 
@@ -15037,7 +15037,7 @@ button.bg-lighter:focus
 
 .bg-gradient-primary
 {
-    background: linear-gradient(87deg, #000000ad 0, #000000ad 100%) !important;
+    background: transparent !important;
 }
 
 .bg-gradient-secondary
@@ -15393,7 +15393,7 @@ button.section-darker:focus
 
 .bg-gradient-primary
 {
-    background: linear-gradient(87deg, #000000ad 0, #000000ad 100%) !important;
+    background: transparent !important;
 }
 
 .bg-gradient-secondary
@@ -18211,7 +18211,7 @@ textarea[resize='horizontal']
 
 .focused .input-group-alternative
 {
-    box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08) !important;
+    box-shadow: none !important;
 }
 
 .focused .input-group
@@ -18222,8 +18222,8 @@ textarea[resize='horizontal']
 .focused .input-group-text
 {
     color: #cdd4dc;
-    border-color: rgba(0, 0, 0, 0.25);
-    background-color: #52525266;
+    border-color: #f99404;
+    background-color: #f99404;
 }
 
 .focused .form-control
@@ -18440,7 +18440,7 @@ textarea[resize='horizontal']
 
 .focused .input-group-alternative
 {
-    box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08) !important;
+    box-shadow: none !important;
 }
 
 .focused .input-group
@@ -18451,8 +18451,8 @@ textarea[resize='horizontal']
 .focused .input-group-text
 {
     color: #cdd4dc;
-    border-color: rgba(0, 0, 0, 0.25);
-    background-color: #52525266;
+    border-color: #f99404;
+    background-color: #f99404;
 }
 
 .focused .form-control

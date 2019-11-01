@@ -86,9 +86,9 @@ return [
     | Global Freeleech
     |
     */
-    'freeleech' => '0',
+    'freeleech' => '1',
 
-    'freeleech_until' => '07/12/2019 08:00 PM EST',
+    'freeleech_until' => '11/03/2019 11:59 PM EST',
 
     /*
     |--------------------------------------------------------------------------
@@ -98,7 +98,7 @@ return [
     | Global Double Upload
     |
     */
-    'doubleup' => '0',
+    'doubleup' => '1',
 
     /*
     |--------------------------------------------------------------------------
@@ -133,7 +133,7 @@ return [
     | Exempt these groups from the invite restrictions
     */
     'invite-only'   => '1',
-    'invite_expire' => '14',
+    'invite_expire' => '2',
 
     'invites_restriced' => false,
     'invite_groups'     => [
@@ -149,7 +149,7 @@ return [
     | Users max seedboxs allowed
     |
     */
-    'max_cli' => 6,
+    'max_cli' => '3',
 
     /*
     |--------------------------------------------------------------------------

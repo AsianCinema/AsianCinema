@@ -44,6 +44,8 @@ class Kernel extends HttpKernel
 
         //AJAX
         //\App\Http\Middleware\ProAjaxMiddleware::class,
+        // CORS Support For CF
+        \Barryvdh\Cors\HandleCors::class,
     ];
 
     /**
