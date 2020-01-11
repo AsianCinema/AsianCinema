@@ -19,7 +19,7 @@
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="{{ Sri::hash('css/main/login.css') }}" crossorigin="anonymous">
 </head>
 
-<body class="bg-default" style="background: url({{ url('/img/login-halloween.jpg') }}) no-repeat center center fixed; background-size: cover;">
+<body class="bg-default" style="background: url({{ url('/img/logo_asian_cinema_winter_BG.jpg') }}) no-repeat center center fixed; background-size: cover;">
 <!-- Designed By HDVinnie -->
 <audio autoplay loop>
   <source src="{{ url('/sounds/login.mp3') }}">
@@ -27,7 +27,7 @@
   <div class="main-content">
 
     <!-- Navbar -->
-    <nav class="navbar navbar-top navbar-horizontal navbar-expand-md navbar-dark">
+    <nav class="navbar navbar-top navbar-horizontal navbar-expand-md">
       <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse-main" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -75,14 +75,14 @@
     </nav>
 
     <!-- Header -->
-    <div class="header bg-gradient-primary py-7 py-lg-8">
+    <div class="header py-7 py-lg-8">
     </div>
     
     <!-- Page content -->
     <div class="container mt--8 pb-5">
   <div class="row justify-content-center">
     <div class="col-lg-5 col-md-7">
-      <div class="card bg-secondary shadow border-0">
+      <div class="card bg-dark shadow border-0">
         <div class="card-body px-lg-5 py-lg-5">
           <div class="text-center text-muted mb-4">
             Sign In With Your Credentials
@@ -95,7 +95,7 @@
                 <div class="input-group-prepend">
                   <span class="input-group-text"><i class="fa fa-user"></i></span>
                 </div>
-                <input class="form-control" placeholder="@lang('auth.username')" type="text" name="username" id="username" required="">
+                <input class="form-control" style="padding-left: 10px;" placeholder="@lang('auth.username')" type="text" name="username" id="username" required="">
                 @if ($errors->has('username'))
                   <br>
                   <span class="help-block text-red">
@@ -110,7 +110,7 @@
                 <div class="input-group-prepend">
                   <span class="input-group-text"><i class="fa fa-lock"></i></span>
                 </div>
-                <input class="form-control" placeholder="@lang('auth.password')" type="password" name="password" id="password" required="">
+                <input class="form-control" style="padding-left: 10px;" placeholder="@lang('auth.password')" type="password" name="password" id="password" required="">
                 @if ($errors->has('password'))
                   <br>
                   <span class="help-block text-red">
@@ -141,7 +141,7 @@
             </div>
 
             <div class="text-center">
-              <button type="submit" id="login-button" class="btn btn-primary my-4">@lang('auth.login')</button>
+              <button type="submit" id="login-button" class="btn btn-danger my-4">@lang('auth.login')</button>
             </div>
 
           </form>
@@ -149,10 +149,10 @@
       </div>
       <div class="row mt-3">
         <div class="col-6">
-          <a href="{{ route('password.request') }}" class="text-light">@lang('auth.lost-password')</a>
+          <b><a href="{{ route('password.request') }}" class="text-red">@lang('auth.lost-password')</a></b>
         </div>
         <div class="col-6 text-right">
-          <a href="{{ route('username.request') }}" class="text-light">@lang('auth.lost-username')</a>
+          <b><a href="{{ route('username.request') }}" class="text-red">@lang('auth.lost-username')</a></b>
         </div>
       </div>
     </div>
