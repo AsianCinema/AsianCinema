@@ -2961,15 +2961,15 @@ fieldset:disabled a.btn
 .btn-primary
 {
     color: #fff;
-    border-color: #f99404;
-    background-color: #f99404;
+    border-color: #ec1b21;
+    background-color: #ec1b21;
     box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
 }
 .btn-primary:hover
 {
     color: #fff;
-    border-color: #f99404;
-    background-color: #f99404;
+    border-color: #ec1b21;
+    background-color: #ec1b21;
 }
 .btn-primary:focus,
 .btn-primary.focus
@@ -2980,16 +2980,16 @@ fieldset:disabled a.btn
 .btn-primary:disabled
 {
     color: #fff;
-    border-color: #f99404;
-    background-color: #f99404;
+    border-color: #ec1b21;
+    background-color: #ec1b21;
 }
 .btn-primary:not(:disabled):not(.disabled):active,
 .btn-primary:not(:disabled):not(.disabled).active,
 .show > .btn-primary.dropdown-toggle
 {
     color: #fff;
-    border-color: #f99404;
-    background-color: #f99404;
+    border-color: #ec1b21;
+    background-color: #ec1b21;
 }
 .btn-primary:not(:disabled):not(.disabled):active:focus,
 .btn-primary:not(:disabled):not(.disabled).active:focus,
@@ -8108,7 +8108,7 @@ button.bg-darker:focus
 
 .border-0
 {
-    border: 3px solid #f99404 !important;
+    border: 3px solid #ec1b21 !important;
 }
 
 .border-top-0
@@ -14617,7 +14617,7 @@ a.text-danger:focus
 
 .text-light
 {
-    color: #adb5bd !important;
+    color: #323736 !important;
 }
 
 a.text-light:hover,
@@ -14688,7 +14688,7 @@ a.text-darker:focus
 
 .text-muted
 {
-    color: #f99404 !important;
+    color: #ec1b21 !important;
     font-weight: 800;
 }
 
@@ -16531,7 +16531,7 @@ a.text-gray-dark:focus
 
 .text-light
 {
-    color: #dfecf7 !important;
+    color: #323736 !important;
     font-size: 1.1rem;
     font-weight: 800;
 }
@@ -18222,8 +18222,8 @@ textarea[resize='horizontal']
 .focused .input-group-text
 {
     color: #cdd4dc;
-    border-color: #f99404;
-    background-color: #f99404;
+    border-color: #ec1b21;
+    background-color: #ec1b21;
 }
 
 .focused .form-control
@@ -18451,8 +18451,8 @@ textarea[resize='horizontal']
 .focused .input-group-text
 {
     color: #cdd4dc;
-    border-color: #f99404;
-    background-color: #f99404;
+    border-color: #ec1b21;
+    background-color: #ec1b21;
 }
 
 .focused .form-control

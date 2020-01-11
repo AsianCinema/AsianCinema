@@ -86,9 +86,9 @@ return [
     | Global Freeleech
     |
     */
-    'freeleech' => '1',
+    'freeleech' => '0',
 
-    'freeleech_until' => '11/03/2019 11:59 PM EST',
+    'freeleech_until' => '01/12/2020 11:59 PM EST',
 
     /*
     |--------------------------------------------------------------------------

@@ -19,10 +19,7 @@
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="{{ Sri::hash('css/main/login.css') }}" crossorigin="anonymous">
 </head>
 
-<body class="bg-default" style="background: url({{ url('/img/login-halloween.jpg') }}) no-repeat center center fixed; background-size: cover;">
-<audio autoplay loop>
-    <source src="{{ url('/sounds/login.mp3') }}">
-</audio>
+<body class="bg-default" style="background: url({{ url('/img/login-background.jpg') }}) no-repeat center center fixed; background-size: cover;">
 <div class="main-content">
 
     <!-- Navbar -->
@@ -78,7 +75,7 @@
     </div>
 
     <!-- Page content -->
-    <div class="container mt--8 pb-5">
+    <div class="container mt--8 pb-5" style="margin-top: 22rem!important;">
         <div class="row justify-content-center">
             <div class="col-lg-5 col-md-7">
                 <div class="card bg-secondary shadow border-0">
