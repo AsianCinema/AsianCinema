@@ -21,9 +21,6 @@
 
 <body class="bg-default" style="background: url({{ url('/img/logo_asian_cinema_winter_BG.jpg') }}) no-repeat center center fixed; background-size: cover;">
 <!-- Designed By HDVinnie -->
-<audio autoplay loop>
-    <source src="{{ url('/sounds/login.mp3') }}">
-</audio>
 <div class="main-content">
 
     <!-- Navbar -->
