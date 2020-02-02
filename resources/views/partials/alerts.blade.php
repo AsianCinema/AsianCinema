@@ -1,4 +1,4 @@
-@if (config('other.freeleech') == true || config('other.invite-only') == false || config('other.doubleup') == true)
+@if (config('other.freeleech') == true || config('other.invite-only') == false || config('other.doubleup') == true || true)
     <div class="alert alert-info" id="alert1">
         <div class="text-center">
     <span>
