@@ -40,7 +40,7 @@
                             <div class="well">
                                 <h3>Style</h3>
                                 <hr>
-                                <div class="form-group">
+                                <div class="form-group" style="display: none">
                                     <label for="theme" class="control-label">Theme</label>
                                     <select class="form-control" id="theme" name="theme">
                                         <option @if ($user->style == 0) selected @endif value="0">Light Theme</option>
@@ -60,14 +60,13 @@
                                     <input type="text" name="custom_css" class="form-control"
                                            value="@if ($user->custom_css) {{ $user->custom_css }}@endif" placeholder="CSS URL">
                                 </div>
-                                <label for="sidenav" class="control-label">Side Navigation</label>
-                                <div class="radio-inline">
-                                    <label><input type="radio" name="sidenav" @if ($user->nav == 1) checked
-                                                  @endif value="1">Expanded</label>
+                                <div class="radio-inline" style="display: none">
+                                    <input type="radio" name="sidenav" @if ($user->nav == 1) checked
+                                                  @endif value="1">
                                 </div>
-                                <div class="radio-inline">
-                                    <label><input type="radio" name="sidenav" @if ($user->nav == 0) checked
-                                                  @endif value="0">Compact</label>
+                                <div class="radio-inline" style="display: none">
+                                    <input type="radio" name="sidenav" @if ($user->nav == 0) checked
+                                                  @endif value="0">
                                 </div>
                             </div>
 
