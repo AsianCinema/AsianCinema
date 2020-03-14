@@ -101,7 +101,7 @@ class AutoGroup extends Command
                 $user->save();
             }
             // Archivist Seedsize >= 10TB and account 3 month old and seedtime average 60 days or better
-            if ($user->getTotalSeedSize() >= 1073741824000 * 10 && round($user->getTotalSeedTime() / max(1, $hiscount)) > 2592000 * 90 && $user->created_at < $current->copy()->subDays(180)->toDateTimeString() && $user->group_id != 18) {
+            if ($user->getTotalSeedSize() >= 1073741824000 * 10 && round($user->getTotalSeedTime() / max(1, $hiscount)) > 2592000 * 3 && $user->created_at < $current->copy()->subDays(180)->toDateTimeString() && $user->group_id != 18) {
                 $user->group_id = 18;
                 $user->save();
             }
